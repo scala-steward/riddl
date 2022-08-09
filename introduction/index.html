@@ -5,22 +5,25 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
 <meta name=generator content="Hugo 0.93.2">
-<meta name=description content="An introduction to the RIDDL language and tools">
+<meta name=description content="In this section we will explore what RIDDL is, by answering these questions:
+ What is RIDDL? What is RIDDL based on? What can RIDDL do? Why is RIDDL needed? What documentation conventions are used?  Click on the above links to explore.">
 <title>Introduction | RIDDL Documentation</title><link rel=icon type=image/svg+xml href=/favicon/favicon.svg>
 <link rel=icon type=image/png sizes=32x32 href=/favicon/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon/favicon-16x16.png>
 <meta property="og:title" content="Introduction">
 <meta property="og:site_name" content="RIDDL Documentation">
-<meta property="og:description" content="An introduction to the RIDDL language and tools">
+<meta property="og:description" content="In this section we will explore what RIDDL is, by answering these questions:
+ What is RIDDL? What is RIDDL based on? What can RIDDL do? Why is RIDDL needed? What documentation conventions are used?  Click on the above links to explore.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://riddl.tech/introduction/">
 <meta property="article:section" content="Introduction">
-<meta property="article:published_time" content="2021-12-01T15:34:22-05:00">
-<meta property="article:modified_time" content="2021-12-01T15:34:22-05:00">
+<meta property="article:published_time" content="2022-02-24T15:08:30-07:00">
+<meta property="article:modified_time" content="2022-02-24T15:08:30-07:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Introduction">
-<meta name=twitter:description content="An introduction to the RIDDL language and tools">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Introduction","name":"Introduction","url":"https://riddl.tech/introduction/","headline":"Introduction","description":"An introduction to the RIDDL language and tools","wordCount":"404","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://riddl.tech/introduction/"},"copyrightHolder":"RIDDL Documentation","copyrightYear":"2021","dateCreated":"2021-12-01T15:34:22.00Z","datePublished":"2021-12-01T15:34:22.00Z","dateModified":"2021-12-01T15:34:22.00Z","publisher":{"@type":"Organization","name":"RIDDL Documentation","url":"https://riddl.tech/","logo":{"@type":"ImageObject","url":"https://riddl.tech/brand.svg","width":"32","height":"32"}}}</script>
+<meta name=twitter:description content="In this section we will explore what RIDDL is, by answering these questions:
+ What is RIDDL? What is RIDDL based on? What can RIDDL do? Why is RIDDL needed? What documentation conventions are used?  Click on the above links to explore.">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Introduction","name":"Introduction","url":"https://riddl.tech/introduction/","headline":"Introduction","description":"In this section we will explore what RIDDL is, by answering these questions:\n What is RIDDL? What is RIDDL based on? What can RIDDL do? Why is RIDDL needed? What documentation conventions are used?  Click on the above links to explore.","wordCount":"41","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://riddl.tech/introduction/"},"copyrightHolder":"RIDDL Documentation","copyrightYear":"2022","dateCreated":"2022-02-24T15:08:30.00Z","datePublished":"2022-02-24T15:08:30.00Z","dateModified":"2022-02-24T15:08:30.00Z","publisher":{"@type":"Organization","name":"RIDDL Documentation","url":"https://riddl.tech/","logo":{"@type":"ImageObject","url":"https://riddl.tech/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-bef27ebf.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -72,11 +75,21 @@
 <div class="gdoc-search__spinner spinner hidden"></div><ul id=gdoc-search-results class=gdoc-search__list></ul></div><section class=gdoc-nav--main>
 <h2>Navigation</h2><ul class=gdoc-nav__list>
 <li>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-f9c03197 checked>
+<label for=navtree-f9c03197 class="flex justify-between">
+<span class=flex>
+<a href=/introduction/ class="gdoc-nav__entry is-active">
+Introduction
+</a>
+</span><svg class="icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/tutorial/ class=gdoc-nav__entry>
-Tutorial
+<a href=/introduction/what-is-riddl/ class=gdoc-nav__entry>
+What Is RIDDL?
 </a>
 </span>
 </label>
@@ -84,13 +97,30 @@ Tutorial
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/introduction/ class="gdoc-nav__entry is-active">
-Introduction
+<a href=/introduction/what-can-riddl-do/ class=gdoc-nav__entry>
+What can RIDDL do?
 </a>
 </span>
 </label>
-<ul class=gdoc-nav__list>
-<li>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/introduction/what-is-riddl-based-on/ class=gdoc-nav__entry>
+What is RIDDL Based On?
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/introduction/why-is-riddl-needed/ class=gdoc-nav__entry>
+Why Is RIDDL Needed?
+</a>
+</span>
+</label>
+</li><li>
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
@@ -99,79 +129,145 @@ Documentation Conventions
 </a>
 </span>
 </label>
-</li><li>
-<input type=checkbox class=hidden>
-<label>
-<span class=flex>
-<a href=/introduction/compilation/ class=gdoc-nav__entry>
-Compilation
-</a>
-</span>
-</label>
-</li><li>
-<input type=checkbox class=hidden>
-<label>
-<span class=flex>
-<a href=/introduction/principles/ class=gdoc-nav__entry>
-Principles
-</a>
-</span>
-</label>
 </li></ul></li><li>
-<input type=checkbox class=hidden>
-<label>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-2ac56580>
+<label for=navtree-2ac56580 class="flex justify-between">
 <span class=flex>
-<a href=/examples/ class=gdoc-nav__entry>
-Example
+<a href=/audience/ class=gdoc-nav__entry>
+Audience
 </a>
-</span>
+</span><svg class="icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
 </label>
 <ul class=gdoc-nav__list>
 <li>
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/examples/scenario/ class=gdoc-nav__entry>
-RBBQ Scenarios
+<a href=/audience/domain-experts-guide/ class=gdoc-nav__entry>
+Domain Expert's Guide
 </a>
 </span>
 </label>
 </li><li>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-a7fc7aac>
+<label for=navtree-a7fc7aac class="flex justify-between">
+<span class=flex>
+<a href=/audience/authors-guide/ class=gdoc-nav__entry>
+Author's Guide
+</a>
+</span><svg class="icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/examples/reactivebbq/ class=gdoc-nav__entry>
-Reactive BBQ
+<a href=/audience/authors-guide/design-tips/ class=gdoc-nav__entry>
+Design Tips
 </a>
 </span>
 </label>
 </li><li>
 <input type=checkbox class=hidden>
 <label>
-<span class=flex>
-<a href=/examples/restaurant/ class=gdoc-nav__entry>
-Restaurant
-</a>
-</span>
+<span class=flex>Syntax Cheat Sheet</span>
 </label>
 </li><li>
 <input type=checkbox class=hidden>
 <label>
-<span class=flex>Back Office</span>
-</label>
-</li><li>
-<input type=checkbox class=hidden>
-<label>
-<span class=flex>Corporate</span>
+<span class=flex>Syntax Reference</span>
 </label>
 </li></ul></li><li>
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
+<a href=/audience/implementors-guide/ class=gdoc-nav__entry>
+Implementor's Guide
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-047c8372>
+<label for=navtree-047c8372 class="flex justify-between">
+<span class=flex>
+<a href=/audience/developers-guide/ class=gdoc-nav__entry>
+Developer's Guide
+</a>
+</span><svg class="icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/audience/developers-guide/principles/ class=gdoc-nav__entry>
+Principles
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-8d2d4b6a>
+<label for=navtree-8d2d4b6a class="flex justify-between">
+<span class=flex>
+<a href=/audience/developers-guide/grammar/ class=gdoc-nav__entry>
+Grammar
+</a>
+</span><svg class="icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/audience/developers-guide/grammar/terminals/ class=gdoc-nav__entry>
+Terminals
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/audience/developers-guide/grammar/common/ class=gdoc-nav__entry>
+Common
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/audience/developers-guide/grammar/domain/ class=gdoc-nav__entry>
+Domain
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/audience/developers-guide/grammar/context/ class=gdoc-nav__entry>
+Context
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/audience/developers-guide/grammar/entity/ class=gdoc-nav__entry>
+Entity
+</a>
+</span>
+</label>
+</li></ul></li></ul></li></ul></li><li>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-aa074cba>
+<label for=navtree-aa074cba class="flex justify-between">
+<span class=flex>
 <a href=/language/ class=gdoc-nav__entry>
 Language
 </a>
-</span>
+</span><svg class="icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
 </label>
 <ul class=gdoc-nav__list>
 <li>
@@ -184,13 +280,13 @@ Language Conventions
 </span>
 </label>
 </li><li>
-<input type=checkbox class=hidden>
-<label>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-b619c866>
+<label for=navtree-b619c866 class="flex justify-between">
 <span class=flex>
 <a href=/language/common/ class=gdoc-nav__entry>
 Common
 </a>
-</span>
+</span><svg class="icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
 </label>
 <ul class=gdoc-nav__list>
 <li>
@@ -199,6 +295,15 @@ Common
 <span class=flex>
 <a href=/language/common/descriptions/ class=gdoc-nav__entry>
 Descriptions
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/language/common/identifiers/ class=gdoc-nav__entry>
+Identifiers
 </a>
 </span>
 </label>
@@ -266,59 +371,50 @@ Imports
 </span>
 </label>
 </li></ul></li><li>
-<input type=checkbox class=hidden>
-<label>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-98ffceb1>
+<label for=navtree-98ffceb1 class="flex justify-between">
 <span class=flex>
-<a href=/language/hierarchy/ class=gdoc-nav__entry>
-Definitional Hierarchy
-</a>
-</span>
-</label>
-<ul class=gdoc-nav__list>
-<li>
-<input type=checkbox class=hidden>
-<label>
-<span class=flex>
-<a href=/language/hierarchy/root/ class=gdoc-nav__entry>
+<a href=/language/root/ class=gdoc-nav__entry>
 Root
 </a>
-</span>
-</label>
-</li><li>
-<input type=checkbox class=hidden>
-<label>
-<span class=flex>
-<a href=/language/hierarchy/domain/ class=gdoc-nav__entry>
-Domains
-</a>
-</span>
+</span><svg class="icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
 </label>
 <ul class=gdoc-nav__list>
 <li>
-<input type=checkbox class=hidden>
-<label>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-a6157529>
+<label for=navtree-a6157529 class="flex justify-between">
 <span class=flex>
-<a href=/language/hierarchy/domain/context/ class=gdoc-nav__entry>
-Bounded Contexts
+<a href=/language/root/domain/ class=gdoc-nav__entry>
+Domain
 </a>
-</span>
+</span><svg class="icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
 </label>
 <ul class=gdoc-nav__list>
 <li>
-<input type=checkbox class=hidden>
-<label>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-74381d62>
+<label for=navtree-74381d62 class="flex justify-between">
 <span class=flex>
-<a href=/language/hierarchy/domain/context/entity/ class=gdoc-nav__entry>
+<a href=/language/root/domain/context/ class=gdoc-nav__entry>
+Contexts
+</a>
+</span><svg class="icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-f67bc327>
+<label for=navtree-f67bc327 class="flex justify-between">
+<span class=flex>
+<a href=/language/root/domain/context/entity/ class=gdoc-nav__entry>
 Entities
 </a>
-</span>
+</span><svg class="icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
 </label>
 <ul class=gdoc-nav__list>
 <li>
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/language/hierarchy/domain/context/entity/state/ class=gdoc-nav__entry>
+<a href=/language/root/domain/context/entity/state/ class=gdoc-nav__entry>
 State
 </a>
 </span>
@@ -327,7 +423,7 @@ State
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/language/hierarchy/domain/context/entity/options/ class=gdoc-nav__entry>
+<a href=/language/root/domain/context/entity/options/ class=gdoc-nav__entry>
 Options
 </a>
 </span>
@@ -336,7 +432,7 @@ Options
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/language/hierarchy/domain/context/entity/invariants/ class=gdoc-nav__entry>
+<a href=/language/root/domain/context/entity/invariants/ class=gdoc-nav__entry>
 Invariants
 </a>
 </span>
@@ -345,7 +441,7 @@ Invariants
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/language/hierarchy/domain/context/entity/handler/ class=gdoc-nav__entry>
+<a href=/language/root/domain/context/entity/handler/ class=gdoc-nav__entry>
 Handler
 </a>
 </span>
@@ -354,7 +450,7 @@ Handler
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/language/hierarchy/domain/context/entity/functions/ class=gdoc-nav__entry>
+<a href=/language/root/domain/context/entity/functions/ class=gdoc-nav__entry>
 Function
 </a>
 </span>
@@ -363,7 +459,7 @@ Function
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/language/hierarchy/domain/context/adaptor/ class=gdoc-nav__entry>
+<a href=/language/root/domain/context/adaptor/ class=gdoc-nav__entry>
 Adaptors
 </a>
 </span>
@@ -372,7 +468,7 @@ Adaptors
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/language/hierarchy/domain/context/api/ class=gdoc-nav__entry>
+<a href=/language/root/domain/context/api/ class=gdoc-nav__entry>
 APIs
 </a>
 </span>
@@ -381,7 +477,7 @@ APIs
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/language/hierarchy/domain/context/saga/ class=gdoc-nav__entry>
+<a href=/language/root/domain/context/saga/ class=gdoc-nav__entry>
 Saga
 </a>
 </span>
@@ -390,7 +486,7 @@ Saga
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/language/hierarchy/domain/context/projections/ class=gdoc-nav__entry>
+<a href=/language/root/domain/context/projections/ class=gdoc-nav__entry>
 Projections
 </a>
 </span>
@@ -399,7 +495,7 @@ Projections
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/language/hierarchy/domain/context/features/ class=gdoc-nav__entry>
+<a href=/language/root/domain/context/features/ class=gdoc-nav__entry>
 Features
 </a>
 </span>
@@ -408,26 +504,26 @@ Features
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/language/hierarchy/domain/story/ class=gdoc-nav__entry>
+<a href=/language/root/domain/story/ class=gdoc-nav__entry>
 Story
 </a>
 </span>
 </label>
 </li><li>
-<input type=checkbox class=hidden>
-<label>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-058a10e7>
+<label for=navtree-058a10e7 class="flex justify-between">
 <span class=flex>
-<a href=/language/hierarchy/domain/streaming/ class=gdoc-nav__entry>
+<a href=/language/root/domain/streaming/ class=gdoc-nav__entry>
 Streaming
 </a>
-</span>
+</span><svg class="icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
 </label>
 <ul class=gdoc-nav__list>
 <li>
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/language/hierarchy/domain/streaming/pipe/ class=gdoc-nav__entry>
+<a href=/language/root/domain/streaming/pipe/ class=gdoc-nav__entry>
 Pipes
 </a>
 </span>
@@ -436,7 +532,7 @@ Pipes
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/language/hierarchy/domain/streaming/processor/ class=gdoc-nav__entry>
+<a href=/language/root/domain/streaming/processor/ class=gdoc-nav__entry>
 Processors
 </a>
 </span>
@@ -445,26 +541,110 @@ Processors
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/language/hierarchy/domain/streaming/plant/ class=gdoc-nav__entry>
+<a href=/language/root/domain/streaming/plant/ class=gdoc-nav__entry>
 Plants
 </a>
 </span>
 </label>
 </li></ul></li></ul></li></ul></li></ul></li><li>
-<input type=checkbox class=hidden>
-<label>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-ce49be4c>
+<label for=navtree-ce49be4c class="flex justify-between">
 <span class=flex>
-<a href=/translation/ class=gdoc-nav__entry>
-Translation
+<a href=/tooling/ class=gdoc-nav__entry>
+Tooling
 </a>
-</span>
+</span><svg class="icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-44c23a27>
+<label for=navtree-44c23a27 class="flex justify-between">
+<span class=flex>
+<a href=/tooling/riddlc/ class=gdoc-nav__entry>
+riddlc
+</a>
+</span><svg class="icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
 </label>
 <ul class=gdoc-nav__list>
 <li>
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/translation/options/ class=gdoc-nav__entry>
+<a href=/tooling/riddlc/build/ class=gdoc-nav__entry>
+How To Build `riddlc`
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/tooling/riddlc/install/ class=gdoc-nav__entry>
+Installing `riddlc`
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/tooling/riddlc/compilation/ class=gdoc-nav__entry>
+Compilation
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-c6c1f211>
+<label for=navtree-c6c1f211 class="flex justify-between">
+<span class=flex>
+<a href=/tooling/riddlc/compilingriddl/ class=gdoc-nav__entry>
+Compiling RIDDL
+</a>
+</span><svg class="icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/tooling/riddlc/compilingriddl/riddlc-help/ class=gdoc-nav__entry>
+riddlc --help
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/tooling/riddlc/compilingriddl/riddlcexamples/ class=gdoc-nav__entry>
+riddlc Examples
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/tooling/riddlc/compilingriddl/riddlcconfigfile/ class=gdoc-nav__entry>
+riddlc Config File
+</a>
+</span>
+</label>
+</li></ul></li><li>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-8c9af8ca>
+<label for=navtree-8c9af8ca class="flex justify-between">
+<span class=flex>
+<a href=/tooling/riddlc/translation/ class=gdoc-nav__entry>
+Translation
+</a>
+</span><svg class="icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/tooling/riddlc/translation/options/ class=gdoc-nav__entry>
 riddlc options
 </a>
 </span>
@@ -473,16 +653,21 @@ riddlc options
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/translation/akka/ class=gdoc-nav__entry>
-Akka
+<a href=/tooling/riddlc/translation/bast/ class=gdoc-nav__entry>
+Binary AST
 </a>
 </span>
 </label>
 </li><li>
 <input type=checkbox class=hidden>
 <label>
+<span class=flex>Diagrams</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
 <span class=flex>
-<a href=/translation/hugo/ class=gdoc-nav__entry>
+<a href=/tooling/riddlc/translation/hugo/ class=gdoc-nav__entry>
 Hugo Docs
 </a>
 </span>
@@ -491,32 +676,59 @@ Hugo Docs
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/translation/bast/ class=gdoc-nav__entry>
-Binary AST
+<a href=/tooling/riddlc/translation/openapi/ class=gdoc-nav__entry>
+OpenAPI
 </a>
 </span>
 </label>
 </li><li>
 <input type=checkbox class=hidden>
 <label>
-<span class=flex>OpenAPI</span>
+<span class=flex>
+<a href=/tooling/riddlc/translation/kalix/ class=gdoc-nav__entry>
+Kalix
+</a>
+</span>
 </label>
-</li></ul></li><li>
+</li><li>
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/grammar/ class=gdoc-nav__entry>
-Grammar
+<a href=/tooling/riddlc/translation/akka/ class=gdoc-nav__entry>
+Akka
 </a>
 </span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>Other Translators</span>
+</label>
+</li></ul></li></ul></li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/tooling/sbt-riddl/ class=gdoc-nav__entry>
+sbt-riddl
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-eb75b6f2>
+<label for=navtree-eb75b6f2 class="flex justify-between">
+<span class=flex>
+<a href=/tooling/editor-plugins/ class=gdoc-nav__entry>
+Getting Ready To Go
+</a>
+</span><svg class="icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
 </label>
 <ul class=gdoc-nav__list>
 <li>
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/grammar/terminals/ class=gdoc-nav__entry>
-Terminals
+<a href=/tooling/editor-plugins/intellij-plugin/ class=gdoc-nav__entry>
+IntelliJ Plugin
 </a>
 </span>
 </label>
@@ -524,8 +736,27 @@ Terminals
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/grammar/common/ class=gdoc-nav__entry>
-Common
+<a href=/tooling/editor-plugins/vs-code-plugin/ class=gdoc-nav__entry>
+VSCode Plugin
+</a>
+</span>
+</label>
+</li></ul></li></ul></li><li>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-25107060>
+<label for=navtree-25107060 class="flex justify-between">
+<span class=flex>
+<a href=/examples/ class=gdoc-nav__entry>
+Example
+</a>
+</span><svg class="icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/examples/scenario/ class=gdoc-nav__entry>
+RBBQ Scenarios
 </a>
 </span>
 </label>
@@ -533,8 +764,8 @@ Common
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/grammar/domain/ class=gdoc-nav__entry>
-Domain
+<a href=/examples/reactivebbq/ class=gdoc-nav__entry>
+Reactive BBQ
 </a>
 </span>
 </label>
@@ -542,8 +773,47 @@ Domain
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/grammar/context/ class=gdoc-nav__entry>
-Context
+<a href=/examples/restaurant/ class=gdoc-nav__entry>
+Restaurant
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>Back Office</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>Corporate</span>
+</label>
+</li></ul></li><li>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-4eaa0280>
+<label for=navtree-4eaa0280 class="flex justify-between">
+<span class=flex>
+<a href=/tutorial/ class=gdoc-nav__entry>
+Tutorial
+</a>
+</span><svg class="icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-ada12bc1>
+<label for=navtree-ada12bc1 class="flex justify-between">
+<span class=flex>
+<a href=/tutorial/reactivebbqusecase/ class=gdoc-nav__entry>
+Reactive BBQ Case Study
+</a>
+</span><svg class="icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/tutorial/reactivebbqusecase/ceo/ class=gdoc-nav__entry>
+CEO of Reactive BBQ
 </a>
 </span>
 </label>
@@ -551,12 +821,151 @@ Context
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/grammar/entity/ class=gdoc-nav__entry>
-Entity
+<a href=/tutorial/reactivebbqusecase/headchef/ class=gdoc-nav__entry>
+Corporate Head Chef
 </a>
 </span>
 </label>
-</li></ul></li></ul></section><section class=gdoc-nav--more>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/tutorial/reactivebbqusecase/host/ class=gdoc-nav__entry>
+Host
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/tutorial/reactivebbqusecase/server/ class=gdoc-nav__entry>
+Server
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/tutorial/reactivebbqusecase/bartender/ class=gdoc-nav__entry>
+Bartender
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/tutorial/reactivebbqusecase/chef/ class=gdoc-nav__entry>
+Chef
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/tutorial/reactivebbqusecase/cook/ class=gdoc-nav__entry>
+Cook
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/tutorial/reactivebbqusecase/deliverydriver/ class=gdoc-nav__entry>
+Delivery Driver
+</a>
+</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/tutorial/reactivebbqusecase/onlinecustomer/ class=gdoc-nav__entry>
+Online Customer
+</a>
+</span>
+</label>
+</li></ul></li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>Basics</span>
+</label>
+</li><li>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-d6046e52>
+<label for=navtree-d6046e52 class="flex justify-between">
+<span class=flex>Beyond Text</span><svg class="icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>Images</span>
+</label>
+</li><li>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-18600dfd>
+<label for=navtree-18600dfd class="flex justify-between">
+<span class=flex>Mermaid</span><svg class="icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>Class Diagram</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>Entity Relationship Diagram</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>Flowchart</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>Gantt</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>Pie Chart</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>Requirement Diagram</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>Sequence Diagram</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>State Diagram</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>User Journey</span>
+</label>
+</li></ul></li></ul></li></ul></li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/future-work/ class=gdoc-nav__entry>
+Future Work
+</a>
+</span>
+</label>
+</li></ul></section><section class=gdoc-nav--more>
 </section></nav></aside><div class=gdoc-page>
 <div class="gdoc-page__header flex flex-wrap
 justify-between" itemprop=breadcrumb>
@@ -569,45 +978,8 @@ Edit page
 </a>
 </span>
 </div></div><article class="gdoc-markdown gdoc-markdown__align--left">
-<h1>Introduction</h1><p>RIDDL is a specification language for large systems using concepts from domain
-driven design and reactive system architecture. It aims to capture business level
-concepts in a way that can be directly translated into software that
-implements the scaffolding for those business concepts; leaving programmers
-to augment that scaffolding with the business logic.</p><div class=gdoc-page__anchorwrap>
-<h3 id=based-on-ddd>
-Based On DDD
-<a data-clipboard-text=https://riddl.tech/introduction/#based-on-ddd class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Based On DDD" aria-label="Anchor to: Based On DDD" href=#based-on-ddd><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3></div><p>RIDDL is based on the concepts from
-<a class=gdoc-markdown__link href=https://en.wikipedia.org/wiki/Domain-driven_design>Domain Driven Design (DDD)</a>. This allows
-domain experts and software developers to work at a higher level of abstraction using a
-ubiquitous language to develop a system specification that is familiar and comprehensible by
-business and technology leaders alike.</p><p>For best comprehension of the language, it is best to be familiar with the
-DDD concepts. For a four-minute overview,
-<a class=gdoc-markdown__link href=https://elearn.domainlanguage.com/>watch this video</a>. For a more in depth
-understanding, we recommend reading Vaughn Vernon&rsquo;s more concise book
-<strong><a class=gdoc-markdown__link href="https://www.amazon.com/Domain-Driven-Design-Distilled-Vaughn-Vernon-ebook/dp/B01JJSGE5S/ref=sr_1_1">Domain Driven Design Distilled</a></strong>
-or Eric Evans&rsquo; original tome
-<strong><a class=gdoc-markdown__link href="https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software-ebook/dp/B00794TAUG/ref=pd_sim_351_2/139-5372630-4190805">Domain Driven Design</a></strong>.</p><p>RIDDL relieves developers of the need to write redundant, boilerplate code for micro-service
-implementations due to its code generation features. The DDD-inspired specification language
-allows domain experts and developers to work at higher levels of abstraction and specification
-than they would if they were coding directly in a programming language. RIDDL aims to relieve developers
-of the burden of maintaining infrastructural code through the evolution of the
-domain model. It also aims to aid the domain expert with a rigorous but simple language to use
-for a specification.</p><div class=gdoc-page__anchorwrap>
-<h3 id=code-generation>
-Code Generation
-<a data-clipboard-text=https://riddl.tech/introduction/#code-generation class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Code Generation" aria-label="Anchor to: Code Generation" href=#code-generation><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3></div><p>RIDDL has its own compiler, <code>riddlc</code>, which can compile specifications written in RIDDL syntax
-into many kinds of output:</p><ul>
-<li><code>.bast</code> - generates files that capture the abstract syntax tree (AST) in a transportable binary
-format</li><li><code>docs</code> - generates a Hugo based website for sharing the model with coworkers in their browser</li><li><code>diagrams</code> - data flow, sequence, entity, context maps, and other diagrams all automatically
-deduced from the code</li><li><code>api</code> - OpenAPI (formerly called Swagger) specifications for APIs implied in the model</li><li><code>code</code> - generates Scala/Akka code for the framework of the system with clean separation for
-the parts that a programmer must implement.</li><li><code>others</code> - plugins can be written to convert the AST into any other kind of data</li></ul><p>The compiler also performs AST syntax checking, semantic validation, and statistical summaries.
-Together, these tools make a compelling offering for rapidly capturing business models,
-validating the semantics of those models, and speeding up the development process to deliver a
-system based on the model.</p></article><div class="gdoc-page__footer flex flex-wrap justify-between">
+<h1>Introduction</h1><p>In this section we will explore what RIDDL is, by answering these questions:</p><ul>
+<li><a class=gdoc-markdown__link href=what-is-riddl>What is RIDDL?</a></li><li><a class=gdoc-markdown__link href=what-is-riddl-based-on>What is RIDDL based on?</a></li><li><a class=gdoc-markdown__link href=what-can-riddl-do>What can RIDDL do?</a></li><li><a class=gdoc-markdown__link href=why-is-riddl-needed>Why is RIDDL needed?</a></li><li><a class=gdoc-markdown__link href=conventions>What documentation conventions are used?</a></li></ul><p>Click on the above links to explore.</p></article><div class="gdoc-page__footer flex flex-wrap justify-between">
 </div></div></main><footer class=gdoc-footer>
 <nav class="container flex">
 <div>
