@@ -5,20 +5,26 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
 <meta name=generator content="Hugo 0.93.2">
-<meta name=description content="Introduction     DDD defines the notion of a bounded context which is a portion of the domain in which the terminology is well-defined. Contexts in RIDDL represent exactly the same concept and are basically a container of various definitions that make up the bounded context. Contexts are introduced with the context keyword and have a name. They form the leaves of the definitional hierarchy so they must occur within domain definitions.">
-<title>Contexts | RIDDL Documentation</title><link rel=icon type=image/svg+xml href=/favicon/favicon.svg>
+<meta name=description content="A context definition in RIDDL represents the notion of a bounded context in DDD. Contexts are introduced with the context keyword and have a name, like this:
+context BBQ is { ??? } IN the above the context is named BBQ and its definition is 3 question marks. ??? means &ldquo;unknown&rdquo; or &ldquo;to be determined&rdquo;
+Contained Definitions     Common     Options     A context may define options.">
+<title>Context | RIDDL Documentation</title><link rel=icon type=image/svg+xml href=/favicon/favicon.svg>
 <link rel=icon type=image/png sizes=32x32 href=/favicon/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon/favicon-16x16.png>
-<meta property="og:title" content="Contexts">
+<meta property="og:title" content="Context">
 <meta property="og:site_name" content="RIDDL Documentation">
-<meta property="og:description" content="Introduction     DDD defines the notion of a bounded context which is a portion of the domain in which the terminology is well-defined. Contexts in RIDDL represent exactly the same concept and are basically a container of various definitions that make up the bounded context. Contexts are introduced with the context keyword and have a name. They form the leaves of the definitional hierarchy so they must occur within domain definitions.">
+<meta property="og:description" content="A context definition in RIDDL represents the notion of a bounded context in DDD. Contexts are introduced with the context keyword and have a name, like this:
+context BBQ is { ??? } IN the above the context is named BBQ and its definition is 3 question marks. ??? means “unknown” or “to be determined”
+Contained Definitions     Common     Options     A context may define options.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://riddl.tech/language/root/domain/context/">
 <meta property="article:section" content="Language">
 <meta name=twitter:card content="summary">
-<meta name=twitter:title content="Contexts">
-<meta name=twitter:description content="Introduction     DDD defines the notion of a bounded context which is a portion of the domain in which the terminology is well-defined. Contexts in RIDDL represent exactly the same concept and are basically a container of various definitions that make up the bounded context. Contexts are introduced with the context keyword and have a name. They form the leaves of the definitional hierarchy so they must occur within domain definitions.">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Language","name":"Contexts","url":"https://riddl.tech/language/root/domain/context/","headline":"Contexts","description":"Introduction     DDD defines the notion of a bounded context which is a portion of the domain in which the terminology is well-defined. Contexts in RIDDL represent exactly the same concept and are basically a container of various definitions that make up the bounded context. Contexts are introduced with the context keyword and have a name. They form the leaves of the definitional hierarchy so they must occur within domain definitions.","wordCount":"139","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://riddl.tech/language/root/domain/context/"},"copyrightHolder":"RIDDL Documentation","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"RIDDL Documentation","url":"https://riddl.tech/","logo":{"@type":"ImageObject","url":"https://riddl.tech/brand.svg","width":"32","height":"32"}}}</script>
+<meta name=twitter:title content="Context">
+<meta name=twitter:description content="A context definition in RIDDL represents the notion of a bounded context in DDD. Contexts are introduced with the context keyword and have a name, like this:
+context BBQ is { ??? } IN the above the context is named BBQ and its definition is 3 question marks. ??? means “unknown” or “to be determined”
+Contained Definitions     Common     Options     A context may define options.">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"TechArticle","articleSection":"Language","name":"Context","url":"https://riddl.tech/language/root/domain/context/","headline":"Context","description":"A context definition in RIDDL represents the notion of a bounded context in DDD. Contexts are introduced with the context keyword and have a name, like this:\ncontext BBQ is { ??? } IN the above the context is named BBQ and its definition is 3 question marks. ??? means “unknown” or “to be determined”\nContained Definitions     Common     Options     A context may define options.","wordCount":"130","inLanguage":"en","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https://riddl.tech/language/root/domain/context/"},"copyrightHolder":"RIDDL Documentation","copyrightYear":"0001","dateCreated":"0001-01-01T00:00:00.00Z","datePublished":"0001-01-01T00:00:00.00Z","dateModified":"0001-01-01T00:00:00.00Z","publisher":{"@type":"Organization","name":"RIDDL Documentation","url":"https://riddl.tech/","logo":{"@type":"ImageObject","url":"https://riddl.tech/brand.svg","width":"32","height":"32"}}}</script>
 <script src=/js/main-bef27ebf.bundle.min.js></script>
 <link rel=preload as=font href=/fonts/Metropolis.woff2 type=font/woff2 crossorigin=anonymous>
 <link rel=preload as=font href=/fonts/LiberationSans.woff2 type=font/woff2 crossorigin=anonymous>
@@ -172,7 +178,31 @@ Design Tips
 <label>
 <span class=flex>Syntax Reference</span>
 </label>
-</li></ul></li><li>
+</li><li>
+<input type=checkbox class=gdoc-nav__toggle id=navtree-66bc8a75>
+<label for=navtree-66bc8a75 class="flex justify-between">
+<span class=flex>
+<a href=/audience/authors-guide/design/ class=gdoc-nav__entry>
+Design
+</a>
+</span><svg class="icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
+</label>
+<ul class=gdoc-nav__list>
+<li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>Domain</span>
+</label>
+</li><li>
+<input type=checkbox class=hidden>
+<label>
+<span class=flex>
+<a href=/audience/authors-guide/design/context/ class=gdoc-nav__entry>
+Context
+</a>
+</span>
+</label>
+</li></ul></li></ul></li><li>
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
@@ -351,8 +381,8 @@ Functions
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/language/common/interactions/ class=gdoc-nav__entry>
-Interactions
+<a href=/language/common/imports/ class=gdoc-nav__entry>
+Imports
 </a>
 </span>
 </label>
@@ -360,8 +390,8 @@ Interactions
 <input type=checkbox class=hidden>
 <label>
 <span class=flex>
-<a href=/language/common/imports/ class=gdoc-nav__entry>
-Imports
+<a href=/language/common/options/ class=gdoc-nav__entry>
+Options
 </a>
 </span>
 </label>
@@ -390,7 +420,7 @@ Domain
 <label for=navtree-74381d62 class="flex justify-between">
 <span class=flex>
 <a href=/language/root/domain/context/ class="gdoc-nav__entry is-active">
-Contexts
+Context
 </a>
 </span><svg class="icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg>
 </label>
@@ -966,67 +996,48 @@ Future Work
 justify-between" itemprop=breadcrumb>
 <div><svg class="icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"/></svg>
 <ol class=breadcrumb itemscope itemtype=https://schema.org/BreadcrumbList>
-<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=/><span itemprop=name>Welcome</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/language/ href=/language/><span itemprop=name>Language</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/language/root/ href=/language/root/><span itemprop=name>Root</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/language/root/domain/ href=/language/root/domain/><span itemprop=name>Domain</span></a><meta itemprop=position content="4"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>Contexts</span><meta itemprop=position content="5"></li></ol></div><div>
+<li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/ href=/><span itemprop=name>Home</span></a><meta itemprop=position content="1"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/language/ href=/language/><span itemprop=name>Language</span></a><meta itemprop=position content="2"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/language/root/ href=/language/root/><span itemprop=name>Root</span></a><meta itemprop=position content="3"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><a itemscope itemtype=https://schema.org/WebPage itemprop=item itemid=/language/root/domain/ href=/language/root/domain/><span itemprop=name>Domain</span></a><meta itemprop=position content="4"></li><li> / </li><li itemprop=itemListElement itemscope itemtype=https://schema.org/ListItem><span itemprop=name>Context</span><meta itemprop=position content="5"></li></ol></div><div>
 <span class=editpage><svg class="icon gdoc_code"><use xlink:href="#gdoc_code"/></svg>
 <a href=https://github.com/reactific/riddl/edit/main/doc/src/hugo/content/language/root/domain/context/_index.md>
 Edit page
 </a>
 </span>
 </div></div><article class="gdoc-markdown gdoc-markdown__align--left">
-<h1>Contexts</h1><div class=gdoc-page__anchorwrap>
-<h2 id=introduction>
-Introduction
-<a data-clipboard-text=https://riddl.tech/language/root/domain/context/#introduction class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Introduction" aria-label="Anchor to: Introduction" href=#introduction><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2></div><p>DDD defines the notion of a <strong>bounded context</strong> which is a portion of the domain
-in which the terminology is well-defined. Contexts in RIDDL represent exactly
-the same concept and are basically a container of various definitions that make up
-the bounded context. Contexts are introduced with the <code>context</code> keyword and have a
-name. They form the leaves of the definitional hierarchy so they must occur within
-domain definitions.</p><div class=gdoc-page__anchorwrap>
-<h2 id=syntax>
-Syntax
-<a data-clipboard-text=https://riddl.tech/language/root/domain/context/#syntax class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Syntax" aria-label="Anchor to: Syntax" href=#syntax><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h2></div><pre tabindex=0><code class=language-riddl data-lang=riddl>context BBQ is { ??? }
-</code></pre><div class=gdoc-page__anchorwrap>
+<h1>Context</h1><p>A <code>context</code> definition in RIDDL represents the notion of a
+<a class=gdoc-markdown__link href=../../../../audience/authors-guide/design/context>bounded context</a> in DDD.
+Contexts are introduced with the <code>context</code> keyword and have a
+name, like this:</p><pre tabindex=0><code class=language-riddl data-lang=riddl>context BBQ is { ??? }
+</code></pre><p>IN the above the context is named <code>BBQ</code> and its definition is 3 question marks.
+<code>???</code> means &ldquo;unknown&rdquo; or &ldquo;to be determined&rdquo;</p><div class=gdoc-page__anchorwrap>
 <h2 id=contained-definitions>
 Contained Definitions
 <a data-clipboard-text=https://riddl.tech/language/root/domain/context/#contained-definitions class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Contained Definitions" aria-label="Anchor to: Contained Definitions" href=#contained-definitions><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h2></div><p>Contexts may contain all the definitions of a DDD bounded context, as defined in the
-sections that follow.</p><div class=gdoc-page__anchorwrap>
+</h2></div><div class=gdoc-page__anchorwrap>
+<h3 id=common>
+Common
+<a data-clipboard-text=https://riddl.tech/language/root/domain/context/#common class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Common" aria-label="Anchor to: Common" href=#common><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3></div><div class=gdoc-page__anchorwrap>
+<h3 id=options>
+Options
+<a data-clipboard-text=https://riddl.tech/language/root/domain/context/#options class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Options" aria-label="Anchor to: Options" href=#options><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+</a>
+</h3></div><p>A <code>context</code> may define options. Options help the translation tools know what to
+do with</p><div class=gdoc-page__anchorwrap>
 <h3 id=type>
 Type
 <a data-clipboard-text=https://riddl.tech/language/root/domain/context/#type class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Type" aria-label="Anchor to: Type" href=#type><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
 </h3></div><p>Types are used in bounded contexts to define messages, function input and output,
-the state of entities, etc. For more on type definitions see <a class=gdoc-markdown__link href=../../../common/types>types</a></p><div class=gdoc-page__anchorwrap>
-<h3 id=adaptor>
-Adaptor
-<a data-clipboard-text=https://riddl.tech/language/root/domain/context/#adaptor class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Adaptor" aria-label="Anchor to: Adaptor" href=#adaptor><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
+the state of entities, etc. For more on type definitions
+see <a class=gdoc-markdown__link href=../../../common/types>types</a></p><div class=gdoc-page__anchorwrap>
+<h3 id=specific>
+Specific
+<a data-clipboard-text=https://riddl.tech/language/root/domain/context/#specific class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Specific" aria-label="Anchor to: Specific" href=#specific><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
 </a>
-</h3></div><div class=gdoc-page__anchorwrap>
-<h3 id=api>
-API
-<a data-clipboard-text=https://riddl.tech/language/root/domain/context/#api class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: API" aria-label="Anchor to: API" href=#api><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3></div><div class=gdoc-page__anchorwrap>
-<h3 id=entity>
-Entity
-<a data-clipboard-text=https://riddl.tech/language/root/domain/context/#entity class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Entity" aria-label="Anchor to: Entity" href=#entity><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3></div><div class=gdoc-page__anchorwrap>
-<h3 id=saga>
-Saga
-<a data-clipboard-text=https://riddl.tech/language/root/domain/context/#saga class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Saga" aria-label="Anchor to: Saga" href=#saga><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3></div><div class=gdoc-page__anchorwrap>
-<h3 id=projection>
-Projection
-<a data-clipboard-text=https://riddl.tech/language/root/domain/context/#projection class="gdoc-page__anchor gdoc-page__anchor--right clip" title="Anchor to: Projection" aria-label="Anchor to: Projection" href=#projection><svg class="icon gdoc_link"><use xlink:href="#gdoc_link"/></svg>
-</a>
-</h3></div><div class="gdoc-toc gdoc-toc__level--4">
+</h3></div><p>Context definitions are containers and they may contain definitions that are
+specific to being defined in a <code>context</code>:</p><div class="gdoc-toc gdoc-toc__level--4">
 <ul>
 <li>
 <span>
