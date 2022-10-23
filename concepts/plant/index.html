@@ -17,6 +17,8 @@ All you have to do is remember the 3 P’s:"><script type=application/ld+json>{"
 <label><span class=flex><a href=/concepts/action/ class=gdoc-nav__entry>Action</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/adaptation/ class=gdoc-nav__entry>Adaptation</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/adaptor/ class=gdoc-nav__entry>Adaptor</a></span></label></li><li><input type=checkbox class=hidden>
+<label><span class=flex><a href=/concepts/application/ class=gdoc-nav__entry>Application</a></span></label></li><li><input type=checkbox class=hidden>
+<label><span class=flex><a href=/concepts/view/ class=gdoc-nav__entry>Application View</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/author/ class=gdoc-nav__entry>Author</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/context/ class=gdoc-nav__entry>Context</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/description/ class=gdoc-nav__entry>Description</a></span></label></li><li><input type=checkbox class=hidden>
@@ -44,6 +46,7 @@ All you have to do is remember the 3 P’s:"><script type=application/ld+json>{"
 <label><span class=flex><a href=/concepts/saga/ class=gdoc-nav__entry>Sagas</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/state/ class=gdoc-nav__entry>States</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/story/ class=gdoc-nav__entry>Stories</a></span></label></li><li><input type=checkbox class=hidden>
+<label><span class=flex>Story Case</span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/term/ class=gdoc-nav__entry>Terms</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/type/ class=gdoc-nav__entry>Types</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/vital/ class=gdoc-nav__entry>Vital Definitions</a></span></label></li></ul></li><li><input type=checkbox class=gdoc-nav__toggle id=navtree-cb5e063a>
@@ -70,7 +73,8 @@ All you have to do is remember the 3 P’s:"><script type=application/ld+json>{"
 <label><span class=flex><a href=/guides/developers/grammar/common/ class=gdoc-nav__entry>Common</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/guides/developers/grammar/domain/ class=gdoc-nav__entry>Domain</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/guides/developers/grammar/context/ class=gdoc-nav__entry>Context</a></span></label></li><li><input type=checkbox class=hidden>
-<label><span class=flex><a href=/guides/developers/grammar/entity/ class=gdoc-nav__entry>Entity</a></span></label></li></ul></li><li><input type=checkbox class=hidden>
+<label><span class=flex><a href=/guides/developers/grammar/entity/ class=gdoc-nav__entry>Entity</a></span></label></li><li><input type=checkbox class=hidden>
+<label><span class=flex><a href=/guides/developers/grammar/root/ class=gdoc-nav__entry>Root</a></span></label></li></ul></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/guides/developers/dependencies/ class=gdoc-nav__entry>Dependencies</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/guides/developers/testing/ class=gdoc-nav__entry>testing</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/guides/developers/releasing/ class=gdoc-nav__entry>Releasing RIDDL</a></span></label></li></ul></li></ul></li><li><input type=checkbox class=gdoc-nav__toggle id=navtree-aa074cba>
@@ -99,7 +103,6 @@ All you have to do is remember the 3 P’s:"><script type=application/ld+json>{"
 <label><span class=flex><a href=/language/root/domain/context/adaptor/ class=gdoc-nav__entry>Adaptors</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/language/root/domain/context/projection/ class=gdoc-nav__entry>Projections</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/language/root/domain/context/saga/ class=gdoc-nav__entry>Saga</a></span></label></li><li><input type=checkbox class=hidden>
-<label><span class=flex><a href=/language/root/domain/context/projections/ class=gdoc-nav__entry>Projections</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/language/root/domain/context/features/ class=gdoc-nav__entry>Features</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/language/root/domain/context/handler/ class=gdoc-nav__entry>Context Handler</a></span></label></li></ul></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/language/root/domain/story/ class=gdoc-nav__entry>Story</a></span></label></li><li><input type=checkbox class=gdoc-nav__toggle id=navtree-058a10e7>
@@ -154,18 +157,20 @@ basic definitions involved in setting up a pipeline:
 a <code>plant</code>, a <code>pipe</code>, and a <code>processor</code>. There are several kinds of pipes and
 processors, and they can be combined to form entire systems of data processing
 known as a <code>plant</code>. These metaphors come from chemical processing concepts
-which you can visualize as something like this:</p><p><img src=../chemical-plant.jpg alt="Visualization Of Pipeline"></p><p>All you have to do is remember the 3 <em>P</em>&rsquo;s:</p><ul><li><a class=gdoc-markdown__link href=pipe>Pipes</a> - Pipes are conduits for reliably transmitting messages of a
-particular type of data between processors that are connected to the pipe.</li><li><a class=gdoc-markdown__link href=processor>Processors</a> - While pipes reliably transport data from its
+which you can visualize as something like this:</p><p><img src=../chemical-plant.jpg alt="Visualization Of Pipeline"></p><p>All you have to do is remember the 3 <em>P</em>&rsquo;s:</p><ul><li><a class=gdoc-markdown__link href=/concepts/pipe/>Pipes</a> - Pipes are conduits for reliably transmitting
+messages of a
+particular type of data between processors that are connected to the pipe.</li><li><a class=gdoc-markdown__link href=/concepts/processor/>Processors</a> - While pipes reliably transport
+data from its
 producers to its consumers, processors are the producers, consumers, and
-transformers of data. Notably, <a class=gdoc-markdown__link href=../context/entity>entities</a> are
-processors of pipes too.</li><li><a class=gdoc-markdown__link href=plant>Plants</a> - Plants combine pipes and processors together with
-support for rich semantics so that arbitrarily complex streams can be
-modeled in RIDDL.</li></ul><p>A RIDDL <code>plant</code> is a definition that combines <a class=gdoc-markdown__link href=pipe>pipes</a> with
-<a class=gdoc-markdown__link href=processor>processors</a> to specify a model of how data should flow. You may
-define as many plants as needed but each plant is a closed system without
-the ability of the RIDDL model to express the sharing of data between the
-plants. This is done deliberately to prevent unintentional contamination of
-data in large models.</p><div class=gdoc-page__anchorwrap><h2 id=joints>Joints
+transformers of data. Notably, <a class=gdoc-markdown__link href=/concepts/entity/>entities</a>
+are processors of pipes too.</li><li><a class=gdoc-markdown__link href=/concepts/plant/>Plants</a> - Plants combine pipes and processors
+together with support for rich semantics so that arbitrarily complex
+streams can be modeled in RIDDL.</li></ul><p>A RIDDL <code>plant</code> is a definition that combines <a class=gdoc-markdown__link href=/concepts/pipe/>pipes</a> with
+<a class=gdoc-markdown__link href=/concepts/processor/>processors</a> to specify a model of how data
+should flow. You may define as many plants as needed but each plant is a
+closed system without the ability of the RIDDL model to express the sharing
+of data between the plants. This is done deliberately to prevent
+unintentional contamination of data in large models.</p><div class=gdoc-page__anchorwrap><h2 id=joints>Joints
 <a data-clipboard-text=https://riddl.tech/concepts/plant/#joints class="gdoc-page__anchor clip flex align-center" title="Anchor to: Joints" aria-label="Anchor to: Joints" href=#joints><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>The purpose of a plant definition is to provide the blueprint for how a set
 of pipes, processors, and entities are joined together so that data may flow
 end-to-end. This is done by using:</p><ul><li>the names and types of inlets in processors</li><li>the names and types of outlets in processors</li><li>the names and content types of pipes</li><li>the definition of a <code>joint</code> to connect pipes and processors</li></ul><div class=gdoc-page__anchorwrap><h2 id=type-safety>Type Safety
@@ -174,7 +179,7 @@ transmits must match the data type of the publishing processors (outlets) and
 the data types of the consuming processors (inlets). When <code>riddlc</code> processes
 a plant specification, it ensures that all the inlet and outlet data types
 match the data types of the connected pipes.</p><div class=gdoc-page__anchorwrap><h2 id=entities-as-processors>Entities as Processors
-<a data-clipboard-text=https://riddl.tech/concepts/plant/#entities-as-processors class="gdoc-page__anchor clip flex align-center" title="Anchor to: Entities as Processors" aria-label="Anchor to: Entities as Processors" href=#entities-as-processors><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>An <a class=gdoc-markdown__link href=entity>entity</a> may also be used as a processor under some
+<a data-clipboard-text=https://riddl.tech/concepts/plant/#entities-as-processors class="gdoc-page__anchor clip flex align-center" title="Anchor to: Entities as Processors" aria-label="Anchor to: Entities as Processors" href=#entities-as-processors><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>An <a class=gdoc-markdown__link href=/concepts/entity/>entity</a> may also be used as a processor under some
 special circumstances:</p><ul><li><em>as a source</em> - An entity may be used as a source of events if a command handler
 is defined for the entity.</li><li><em>as a sink</em> - An entity may be used as a sink for events if a reaction handler
 is defined for the entity.</li><li><em>as a flow</em> - An entity may be used as a flow to convert commands into events</li></ul><div class=gdoc-page__anchorwrap><h2 id=bulkheads>Bulkheads

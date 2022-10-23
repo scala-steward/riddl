@@ -17,6 +17,8 @@ Predefined Types RIDDL supports several predefined types that just “exist” b
 <label><span class=flex><a href=/concepts/action/ class=gdoc-nav__entry>Action</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/adaptation/ class=gdoc-nav__entry>Adaptation</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/adaptor/ class=gdoc-nav__entry>Adaptor</a></span></label></li><li><input type=checkbox class=hidden>
+<label><span class=flex><a href=/concepts/application/ class=gdoc-nav__entry>Application</a></span></label></li><li><input type=checkbox class=hidden>
+<label><span class=flex><a href=/concepts/view/ class=gdoc-nav__entry>Application View</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/author/ class=gdoc-nav__entry>Author</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/context/ class=gdoc-nav__entry>Context</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/description/ class=gdoc-nav__entry>Description</a></span></label></li><li><input type=checkbox class=hidden>
@@ -44,6 +46,7 @@ Predefined Types RIDDL supports several predefined types that just “exist” b
 <label><span class=flex><a href=/concepts/saga/ class=gdoc-nav__entry>Sagas</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/state/ class=gdoc-nav__entry>States</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/story/ class=gdoc-nav__entry>Stories</a></span></label></li><li><input type=checkbox class=hidden>
+<label><span class=flex>Story Case</span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/term/ class=gdoc-nav__entry>Terms</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/type/ class=gdoc-nav__entry>Types</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/vital/ class=gdoc-nav__entry>Vital Definitions</a></span></label></li></ul></li><li><input type=checkbox class=gdoc-nav__toggle id=navtree-cb5e063a>
@@ -70,7 +73,8 @@ Predefined Types RIDDL supports several predefined types that just “exist” b
 <label><span class=flex><a href=/guides/developers/grammar/common/ class=gdoc-nav__entry>Common</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/guides/developers/grammar/domain/ class=gdoc-nav__entry>Domain</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/guides/developers/grammar/context/ class=gdoc-nav__entry>Context</a></span></label></li><li><input type=checkbox class=hidden>
-<label><span class=flex><a href=/guides/developers/grammar/entity/ class=gdoc-nav__entry>Entity</a></span></label></li></ul></li><li><input type=checkbox class=hidden>
+<label><span class=flex><a href=/guides/developers/grammar/entity/ class=gdoc-nav__entry>Entity</a></span></label></li><li><input type=checkbox class=hidden>
+<label><span class=flex><a href=/guides/developers/grammar/root/ class=gdoc-nav__entry>Root</a></span></label></li></ul></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/guides/developers/dependencies/ class=gdoc-nav__entry>Dependencies</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/guides/developers/testing/ class=gdoc-nav__entry>testing</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/guides/developers/releasing/ class=gdoc-nav__entry>Releasing RIDDL</a></span></label></li></ul></li></ul></li><li><input type=checkbox class=gdoc-nav__toggle id=navtree-aa074cba checked>
@@ -99,7 +103,6 @@ Predefined Types RIDDL supports several predefined types that just “exist” b
 <label><span class=flex><a href=/language/root/domain/context/adaptor/ class=gdoc-nav__entry>Adaptors</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/language/root/domain/context/projection/ class=gdoc-nav__entry>Projections</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/language/root/domain/context/saga/ class=gdoc-nav__entry>Saga</a></span></label></li><li><input type=checkbox class=hidden>
-<label><span class=flex><a href=/language/root/domain/context/projections/ class=gdoc-nav__entry>Projections</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/language/root/domain/context/features/ class=gdoc-nav__entry>Features</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/language/root/domain/context/handler/ class=gdoc-nav__entry>Context Handler</a></span></label></li></ul></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/language/root/domain/story/ class=gdoc-nav__entry>Story</a></span></label></li><li><input type=checkbox class=gdoc-nav__toggle id=navtree-058a10e7>
@@ -158,7 +161,7 @@ engineer or domain expert is likely the most frequent user.</p><div class=gdoc-p
 fundamental and well understood in any targeted computing environment. These
 predefined type names can be used anywhere that a type definition is needed,
 for example in a field of an entity&rsquo;s state definition
-<a class=gdoc-markdown__link href=../root/domain/context/entity/state>see here</a></p><p>The predefined types are:</p><ul><li><strong>String</strong> - a sequence of characters of any length</li><li><strong>Boolean</strong> - a binary value for true/false logic</li><li><strong>Number</strong> - a numeric value either integer or decimal</li><li><strong>Integer</strong> - a numeric value that excludes fractional parts</li><li><strong>Decimal</strong> - a numeric value that includes fractional parts</li><li><strong>Real</strong> - a real number</li><li><strong>Id</strong> - a globally unique identifier</li><li><strong>Date</strong> - a date value</li><li><strong>Time</strong> - a time of day value</li><li><strong>DateTime</strong> - a date and a time value together</li><li><strong>TimeStamp</strong> - a date and time combined with at least millisecond accuracy</li><li><strong>Duration</strong> - the amount of time between a start and stop time</li><li><strong>LatLong</strong> - a position on earth</li><li><strong>Nothing</strong> - a type that cannot hold a value</li><li><strong>URL</strong> - a uniform resource locator of any scheme</li></ul><div class=gdoc-page__anchorwrap><h2 id=named-type-definitions>Named Type Definitions
+<a class=gdoc-markdown__link href=/language/root/domain/context/entity/state/>see here</a></p><p>The predefined types are:</p><ul><li><strong>String</strong> - a sequence of characters of any length</li><li><strong>Boolean</strong> - a binary value for true/false logic</li><li><strong>Number</strong> - a numeric value either integer or decimal</li><li><strong>Integer</strong> - a numeric value that excludes fractional parts</li><li><strong>Decimal</strong> - a numeric value that includes fractional parts</li><li><strong>Real</strong> - a real number</li><li><strong>Id</strong> - a globally unique identifier</li><li><strong>Date</strong> - a date value</li><li><strong>Time</strong> - a time of day value</li><li><strong>DateTime</strong> - a date and a time value together</li><li><strong>TimeStamp</strong> - a date and time combined with at least millisecond accuracy</li><li><strong>Duration</strong> - the amount of time between a start and stop time</li><li><strong>LatLong</strong> - a position on earth</li><li><strong>Nothing</strong> - a type that cannot hold a value</li><li><strong>URL</strong> - a uniform resource locator of any scheme</li></ul><div class=gdoc-page__anchorwrap><h2 id=named-type-definitions>Named Type Definitions
 <a data-clipboard-text=https://riddl.tech/language/common/types/#named-type-definitions class="gdoc-page__anchor clip flex align-center" title="Anchor to: Named Type Definitions" aria-label="Anchor to: Named Type Definitions" href=#named-type-definitions><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>In addition to the predefined types, RIDDL supports the definition of new
 types using a name and a type expression with this syntax:</p><pre tabindex=0><code class=language-riddl data-lang=riddl>type name = &lt;type-expression&gt;
 </code></pre><p>When defining values, one must use a named type defined with the
@@ -189,8 +192,8 @@ telephone number:</p><pre tabindex=0><code class=language-riddl data-lang=riddl>
 <a data-clipboard-text=https://riddl.tech/language/common/types/#range class="gdoc-page__anchor clip flex align-center" title="Anchor to: Range" aria-label="Anchor to: Range" href=#range><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h3></div><p>The predefined types allow the use of unbounded integers but when you want
 to constrict the range of values, you need a <code>Range</code> type expression. The
 expression <code>Range(&lt;min>,&lt;max>)</code> will define an integer value whose range is
-restricted to the <code>&lt;min></code> and <code>&lt;max></code> values provided. As with [bounded
-strings](#Bounded Strings), the <code>&lt;min></code> and <code>&lt;max></code> values are
+restricted to the <code>&lt;min></code> and <code>&lt;max></code> values provided. As with
+[bounded strings](#Bounded Strings), the <code>&lt;min></code> and <code>&lt;max></code> values are
 optional and default to 0 and infinity respectively. For example:</p><pre tabindex=0><code class=language-riddl data-lang=riddl>type Percent = range(,100) // only value 0 to 100 inclusive
 </code></pre><div class=gdoc-page__anchorwrap><h3 id=restricted-scheme-url>Restricted Scheme URL
 <a data-clipboard-text=https://riddl.tech/language/common/types/#restricted-scheme-url class="gdoc-page__anchor clip flex align-center" title="Anchor to: Restricted Scheme URL" aria-label="Anchor to: Restricted Scheme URL" href=#restricted-scheme-url><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h3></div><p>The predefined types allow the use of any URL, but when you want to

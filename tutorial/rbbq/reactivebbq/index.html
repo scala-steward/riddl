@@ -17,6 +17,8 @@ At this top level of definition we can see that a single domain named ReactiveBB
 <label><span class=flex><a href=/concepts/action/ class=gdoc-nav__entry>Action</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/adaptation/ class=gdoc-nav__entry>Adaptation</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/adaptor/ class=gdoc-nav__entry>Adaptor</a></span></label></li><li><input type=checkbox class=hidden>
+<label><span class=flex><a href=/concepts/application/ class=gdoc-nav__entry>Application</a></span></label></li><li><input type=checkbox class=hidden>
+<label><span class=flex><a href=/concepts/view/ class=gdoc-nav__entry>Application View</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/author/ class=gdoc-nav__entry>Author</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/context/ class=gdoc-nav__entry>Context</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/description/ class=gdoc-nav__entry>Description</a></span></label></li><li><input type=checkbox class=hidden>
@@ -44,6 +46,7 @@ At this top level of definition we can see that a single domain named ReactiveBB
 <label><span class=flex><a href=/concepts/saga/ class=gdoc-nav__entry>Sagas</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/state/ class=gdoc-nav__entry>States</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/story/ class=gdoc-nav__entry>Stories</a></span></label></li><li><input type=checkbox class=hidden>
+<label><span class=flex>Story Case</span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/term/ class=gdoc-nav__entry>Terms</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/type/ class=gdoc-nav__entry>Types</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/vital/ class=gdoc-nav__entry>Vital Definitions</a></span></label></li></ul></li><li><input type=checkbox class=gdoc-nav__toggle id=navtree-cb5e063a>
@@ -70,7 +73,8 @@ At this top level of definition we can see that a single domain named ReactiveBB
 <label><span class=flex><a href=/guides/developers/grammar/common/ class=gdoc-nav__entry>Common</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/guides/developers/grammar/domain/ class=gdoc-nav__entry>Domain</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/guides/developers/grammar/context/ class=gdoc-nav__entry>Context</a></span></label></li><li><input type=checkbox class=hidden>
-<label><span class=flex><a href=/guides/developers/grammar/entity/ class=gdoc-nav__entry>Entity</a></span></label></li></ul></li><li><input type=checkbox class=hidden>
+<label><span class=flex><a href=/guides/developers/grammar/entity/ class=gdoc-nav__entry>Entity</a></span></label></li><li><input type=checkbox class=hidden>
+<label><span class=flex><a href=/guides/developers/grammar/root/ class=gdoc-nav__entry>Root</a></span></label></li></ul></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/guides/developers/dependencies/ class=gdoc-nav__entry>Dependencies</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/guides/developers/testing/ class=gdoc-nav__entry>testing</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/guides/developers/releasing/ class=gdoc-nav__entry>Releasing RIDDL</a></span></label></li></ul></li></ul></li><li><input type=checkbox class=gdoc-nav__toggle id=navtree-aa074cba>
@@ -99,7 +103,6 @@ At this top level of definition we can see that a single domain named ReactiveBB
 <label><span class=flex><a href=/language/root/domain/context/adaptor/ class=gdoc-nav__entry>Adaptors</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/language/root/domain/context/projection/ class=gdoc-nav__entry>Projections</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/language/root/domain/context/saga/ class=gdoc-nav__entry>Saga</a></span></label></li><li><input type=checkbox class=hidden>
-<label><span class=flex><a href=/language/root/domain/context/projections/ class=gdoc-nav__entry>Projections</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/language/root/domain/context/features/ class=gdoc-nav__entry>Features</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/language/root/domain/context/handler/ class=gdoc-nav__entry>Context Handler</a></span></label></li></ul></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/language/root/domain/story/ class=gdoc-nav__entry>Story</a></span></label></li><li><input type=checkbox class=gdoc-nav__toggle id=navtree-058a10e7>
@@ -153,9 +156,11 @@ justify-between" itemprop=breadcrumb><div><svg class="gdoc-icon gdoc_path hidden
 </code></pre><p>Everything in RIDDL revolves around creating domains and subdomains. These
 are logical groupings of definitions that <em>belong</em> together, presumably
 because they mimic and organizations structure or some other logical, real
-world groupings. Domains can be nested.</p><p>At this top level of definition we can see that a single <code>domain</code>
+world groupings. Domains can be nested.</p><p>At this top level of definition we can see that a single
+<a class=gdoc-markdown__link--code href=/concepts/domain/><code>domain</code></a>
 named <code>ReactiveBBQ</code> represents the entire enterprise. The details of that
-top level <code>domain</code> is abstracted away via three <code>include</code> statements within
-its body, one for each of the subdomains:</p><ul><li><a class=gdoc-markdown__link--code href=restaurant><code>Restaurant</code></a></li><li><a class=gdoc-markdown__link--code href=backoffice><code>Back Office</code></a></li><li><a class=gdoc-markdown__link--code href=corporate><code>Corporate</code></a></li></ul></article><div class="gdoc-page__footer flex flex-wrap justify-between"></div></div></main><footer class=gdoc-footer><nav class="container flex"><div><section class="flex flex-wrap align-center"><span class="gdoc-footer__item gdoc-footer__item--row">Built with <a href=https://gohugo.io/ class=gdoc-footer__link>Hugo</a></span>
+top level <a class=gdoc-markdown__link--code href=/concepts/domain/><code>domain</code></a> is abstracted
+away via three <a class=gdoc-markdown__link--code href=/concepts/include/><code>include</code></a>
+statements within its body, one for each of the subdomains:</p><ul><li><a class=gdoc-markdown__link--code href=/tutorial/rbbq/restaurant/><code>Restaurant</code></a></li><li><a class=gdoc-markdown__link--code href=/tutorial/rbbq/backoffice/><code>Back Office</code></a></li><li><a class=gdoc-markdown__link--code href=/tutorial/rbbq/corporate/><code>Corporate</code></a></li></ul></article><div class="gdoc-page__footer flex flex-wrap justify-between"></div></div></main><footer class=gdoc-footer><nav class="container flex"><div><section class="flex flex-wrap align-center"><span class="gdoc-footer__item gdoc-footer__item--row">Built with <a href=https://gohugo.io/ class=gdoc-footer__link>Hugo</a></span>
 <span class="gdoc-footer__item gdoc-footer__item--row">By &copy;2022 Ossum Inc. <a href=/legal class=gdoc-footer__link>All Rights Reserved.</a></span>
 <span class="gdoc-footer__item gdoc-footer__item--row"><a href=/privacy class=gdoc-footer__link>Privacy</a></span></section></div><div class="flex flex-25 justify-end"><span class="gdoc-footer__item text-right"><a class="gdoc-footer__link fake-link" href=# aria-label="Back to top"><svg class="gdoc-icon gdoc_keyboard_arrow_up"><use xlink:href="#gdoc_keyboard_arrow_up"/></svg><span class=hidden-mobile>Back to top</span></a></span></div></nav></footer></div><script defer src=/js/search-1c4cfb2d.bundle.min.js></script></body></html>
