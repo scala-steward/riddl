@@ -1,4 +1,4 @@
-<!doctype html><html lang=en class=color-toggle-hidden><head><meta charset=utf-8><meta name=referrer content="no-referrer"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=generator content="Hugo 0.104.3"><meta name=description content="An Action is something a program does. Actions are used in the then and but clauses of an example.
+<!doctype html><html lang=en class=color-toggle-hidden><head><meta charset=utf-8><meta name=referrer content="no-referrer"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=generator content="Hugo 0.105.0"><meta name=description content="An Action is something a program does. Actions are used in the then and but clauses of an example.
 There are many kinds of Actions, described in the table below
 Name Description Append Add an item to a field that is a collection Arbitrary A textually described arbitrary action Ask Send a message to an entity, asynchronously process result Become Instructs an entity change to a new handler Compound Execute a group of nested actions Error Produce an error with a message FunctionCall Call a function to get a result Morph Morph the state of an entity to a new state Publish Publish a message to a pipe Reply Provide the reply message to the entity that invoked a query Return Return a value from a function Set Set a field of the current state of an entity Tell Send a message to an entity, do not wait for result Yield Place a message on an entity&rsquo;s event pipe Applicability Not all actions can be used in every situation."><title>Action | RIDDL Documentation</title><link rel=icon type=image/svg+xml href=/favicon/RIDDL-Logo.svg><link rel=icon type=image/png sizes=40x40 href=/favicon/RIDDL-Logo-40x40.png><meta property="og:title" content="Action"><meta property="og:site_name" content="RIDDL Documentation"><meta property="og:description" content="An Action is something a program does. Actions are used in the then and but clauses of an example.
 There are many kinds of Actions, described in the table below
@@ -18,12 +18,12 @@ Name Description Append Add an item to a field that is a collection Arbitrary A 
 <label for=navtree-04d46617 class="flex justify-between align-center"><span class=flex><a href=/concepts/ class=gdoc-nav__entry>Concepts</a></span><svg class="gdoc-icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="gdoc-icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg></label><ul class=gdoc-nav__list><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/action/ class="gdoc-nav__entry is-active">Action</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/actor/ class=gdoc-nav__entry>Actor</a></span></label></li><li><input type=checkbox class=hidden>
-<label><span class=flex><a href=/concepts/adaptation/ class=gdoc-nav__entry>Adaptation</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/adaptor/ class=gdoc-nav__entry>Adaptor</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/application/ class=gdoc-nav__entry>Application</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/element/ class=gdoc-nav__entry>Application Element</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/author/ class=gdoc-nav__entry>Author</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/context/ class=gdoc-nav__entry>Context</a></span></label></li><li><input type=checkbox class=hidden>
+<label><span class=flex><a href=/concepts/definition/ class=gdoc-nav__entry>Definition</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/description/ class=gdoc-nav__entry>Description</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/domain/ class=gdoc-nav__entry>Domain</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/entity/ class=gdoc-nav__entry>Entity</a></span></label></li><li><input type=checkbox class=hidden>
@@ -31,19 +31,23 @@ Name Description Append Add an item to a field that is a collection Arbitrary A 
 <label><span class=flex><a href=/concepts/expression/ class=gdoc-nav__entry>Expression</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/field/ class=gdoc-nav__entry>Field</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/function/ class=gdoc-nav__entry>Function</a></span></label></li><li><input type=checkbox class=hidden>
+<label><span class=flex><a href=/concepts/group/ class=gdoc-nav__entry>Group</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/handler/ class=gdoc-nav__entry>Handlers</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/include/ class=gdoc-nav__entry>Includes</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/inlet/ class=gdoc-nav__entry>Inlets</a></span></label></li><li><input type=checkbox class=hidden>
+<label><span class=flex><a href=/concepts/input/ class=gdoc-nav__entry>Input</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/invariant/ class=gdoc-nav__entry>Invariants</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/joint/ class=gdoc-nav__entry>Joints</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/message/ class=gdoc-nav__entry>Messages</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/onclause/ class=gdoc-nav__entry>On Clauses</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/option/ class=gdoc-nav__entry>Options</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/outlet/ class=gdoc-nav__entry>Outlets</a></span></label></li><li><input type=checkbox class=hidden>
+<label><span class=flex><a href=/concepts/output/ class=gdoc-nav__entry>Output</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/pipe/ class=gdoc-nav__entry>Pipes</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/plant/ class=gdoc-nav__entry>Plants</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/processor/ class=gdoc-nav__entry>Processors</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/projection/ class=gdoc-nav__entry>Projections</a></span></label></li><li><input type=checkbox class=hidden>
+<label><span class=flex><a href=/concepts/repository/ class=gdoc-nav__entry>Root</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/root/ class=gdoc-nav__entry>Root</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/sagastep/ class=gdoc-nav__entry>Saga Steps</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/saga/ class=gdoc-nav__entry>Sagas</a></span></label></li><li><input type=checkbox class=hidden>
