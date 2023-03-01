@@ -21,6 +21,7 @@
 <label><span class=flex><a href=/concepts/description/ class=gdoc-nav__entry>Description</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/domain/ class="gdoc-nav__entry is-active">Domain</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/entity/ class=gdoc-nav__entry>Entity</a></span></label></li><li><input type=checkbox class=hidden>
+<label><span class=flex><a href=/concepts/epic/ class=gdoc-nav__entry>Epics</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/example/ class=gdoc-nav__entry>Example</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/expression/ class=gdoc-nav__entry>Expression</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/field/ class=gdoc-nav__entry>Field</a></span></label></li><li><input type=checkbox class=hidden>
@@ -46,7 +47,6 @@
 <label><span class=flex><a href=/concepts/sagastep/ class=gdoc-nav__entry>Saga Steps</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/saga/ class=gdoc-nav__entry>Sagas</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/state/ class=gdoc-nav__entry>States</a></span></label></li><li><input type=checkbox class=hidden>
-<label><span class=flex><a href=/concepts/story/ class=gdoc-nav__entry>Stories</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/case/ class=gdoc-nav__entry>Story Case</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/term/ class=gdoc-nav__entry>Terms</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/type/ class=gdoc-nav__entry>Types</a></span></label></li><li><input type=checkbox class=hidden>
@@ -106,7 +106,7 @@
 <label><span class=flex><a href=/language/root/domain/context/saga/ class=gdoc-nav__entry>Saga</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/language/root/domain/context/features/ class=gdoc-nav__entry>Features</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/language/root/domain/context/handler/ class=gdoc-nav__entry>Context Handler</a></span></label></li></ul></li><li><input type=checkbox class=hidden>
-<label><span class=flex><a href=/language/root/domain/story/ class=gdoc-nav__entry>Story</a></span></label></li><li><input type=checkbox class=gdoc-nav__toggle id=navtree-058a10e7>
+<label><span class=flex><a href=/language/root/domain/epic/ class=gdoc-nav__entry>Epic</a></span></label></li><li><input type=checkbox class=gdoc-nav__toggle id=navtree-058a10e7>
 <label for=navtree-058a10e7 class="flex justify-between align-center"><span class=flex><a href=/language/root/domain/streaming/ class=gdoc-nav__entry>Streaming</a></span><svg class="gdoc-icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="gdoc-icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg></label><ul class=gdoc-nav__list><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/language/root/domain/streaming/pipe/ class=gdoc-nav__entry>Pipes</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/language/root/domain/streaming/processor/ class=gdoc-nav__entry>Processors</a></span></label></li><li><input type=checkbox class=hidden>
@@ -167,10 +167,10 @@ might devise a domain hierarchy like this:</p><ul><li>Two Wheeled Vehicle<ul><li
 <a data-clipboard-text=https://riddl.tech/concepts/domain/#occurs-in class="gdoc-page__anchor clip flex align-center" title="Anchor to: Occurs In" aria-label="Anchor to: Occurs In" href=#occurs-in><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><ul><li><a class=gdoc-markdown__link href=/concepts/root/>Root</a></li><li><a class=gdoc-markdown__link href=/concepts/domain/>Domains</a><svg class="gdoc-icon rotate-left"><use xlink:href="#rotate-left"/></svg> - domains
 can be nested in a super-domain.</li></ul><div class=gdoc-page__anchorwrap><h2 id=contains>Contains
 <a data-clipboard-text=https://riddl.tech/concepts/domain/#contains class="gdoc-page__anchor clip flex align-center" title="Anchor to: Contains" aria-label="Anchor to: Contains" href=#contains><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Within a domain, you can define these things:</p><ul><li><a class=gdoc-markdown__link href=/concepts/actor/>Actors</a> - someone or thing that uses the domain</li><li><a class=gdoc-markdown__link href=/concepts/application/>Applications</a> - an actor interface</li><li><a class=gdoc-markdown__link href=/concepts/author/>Authors</a> - who defined the domain</li><li><a class=gdoc-markdown__link href=/concepts/context/>Contexts</a> - a precisely defined bounded context within the domain</li><li><a class=gdoc-markdown__link href=/concepts/domain/>Domains</a><svg class="gdoc-icon rotate-left"><use xlink:href="#rotate-left"/></svg> - domains
-can have nested domains (subdomains)</li><li><a class=gdoc-markdown__link href=/concepts/include/>Includes</a> - inclusion of entity content from a
+can have nested domains (subdomains)</li><li><a class=gdoc-markdown__link href=/concepts/epic/>Epics</a> - a story about external entities
+interacting with the domain</li><li><a class=gdoc-markdown__link href=/concepts/include/>Includes</a> - inclusion of entity content from a
 file</li><li><a class=gdoc-markdown__link href=/concepts/option/>Options</a> - optional declarations about a
-definition</li><li><a class=gdoc-markdown__link href=/concepts/plant/>Plants</a> - a data processing plant</li><li><a class=gdoc-markdown__link href=/concepts/story/>Stories</a> - a story about external entities
-interacting with the domain</li><li><a class=gdoc-markdown__link href=/concepts/term/>Terms</a> - definition of a term relevant to the
+definition</li><li><a class=gdoc-markdown__link href=/concepts/plant/>Plants</a> - a data processing plant</li><li><a class=gdoc-markdown__link href=/concepts/term/>Terms</a> - definition of a term relevant to the
 domain</li><li><a class=gdoc-markdown__link href=/concepts/type/>Types</a> - information definitions used throughout
 the domain</li></ul></article><div class="gdoc-page__footer flex flex-wrap justify-between"></div></div></main><footer class=gdoc-footer><nav class="container flex"><div><section class="flex flex-wrap align-center"><span class="gdoc-footer__item gdoc-footer__item--row">Built with <a href=https://gohugo.io/ class=gdoc-footer__link>Hugo</a></span>
 <span class="gdoc-footer__item gdoc-footer__item--row">By &copy;2022 Ossum Inc. <a href=/legal class=gdoc-footer__link>All Rights Reserved.</a></span>
