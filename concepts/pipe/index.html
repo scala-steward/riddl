@@ -1,4 +1,4 @@
-<!doctype html><html lang=en class=color-toggle-hidden><head><meta charset=utf-8><meta name=referrer content="no-referrer"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=generator content="Hugo 0.112.5"><meta name=description content="Pipes are uni-directional conduits for reliably transmitting data of a particular type.
+<!doctype html><html lang=en class=color-toggle-hidden><head><meta charset=utf-8><meta name=referrer content="no-referrer"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=generator content="Hugo 0.118.2"><meta name=description content="Pipes are uni-directional conduits for reliably transmitting data of a particular type.
 Data Transmission Type Pipes can transmit any data type that RIDDL can specify. There is only one data type that flows in a pipe. The transmission type is often used with an alternation of messages such as the commands and queries that an entity might receive.
 Pipe End Connections Pipes have two ends, from and to, and each must be connected to a processor."><title>Pipes | RIDDL Documentation</title><link rel=icon type=image/svg+xml href=/favicon/RIDDL-Logo.svg><link rel=icon type=image/png sizes=40x40 href=/favicon/RIDDL-Logo-40x40.png><meta property="og:title" content="Pipes"><meta property="og:site_name" content="RIDDL Documentation"><meta property="og:description" content="Pipes are uni-directional conduits for reliably transmitting data of a particular type.
 Data Transmission Type Pipes can transmit any data type that RIDDL can specify. There is only one data type that flows in a pipe. The transmission type is often used with an alternation of messages such as the commands and queries that an entity might receive.
@@ -16,19 +16,18 @@ Pipe End Connections Pipes have two ends, from and to, and each must be connecte
 <label><span class=flex><a href=/introduction/who-made-riddl-possible/ class=gdoc-nav__entry>Who Made RIDDL Possible?</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/introduction/how-can-i-get-help/ class=gdoc-nav__entry>How Can I Get Help?</a></span></label></li></ul></li><li><input type=checkbox class=gdoc-nav__toggle id=navtree-04d46617 checked>
 <label for=navtree-04d46617 class="flex justify-between align-center"><span class=flex><a href=/concepts/ class=gdoc-nav__entry>Concepts</a></span><svg class="gdoc-icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="gdoc-icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg></label><ul class=gdoc-nav__list><li><input type=checkbox class=hidden>
-<label><span class=flex><a href=/concepts/action/ class=gdoc-nav__entry>Action</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/adaptor/ class=gdoc-nav__entry>Adaptor</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/application/ class=gdoc-nav__entry>Application</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/element/ class=gdoc-nav__entry>Application Element</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/author/ class=gdoc-nav__entry>Author</a></span></label></li><li><input type=checkbox class=hidden>
+<label><span class=flex><a href=/concepts/conditional/ class=gdoc-nav__entry>Condition</a></span></label></li><li><input type=checkbox class=hidden>
+<label><span class=flex><a href=/concepts/constant/ class=gdoc-nav__entry>Constant</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/context/ class=gdoc-nav__entry>Context</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/definition/ class=gdoc-nav__entry>Definition</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/description/ class=gdoc-nav__entry>Description</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/domain/ class=gdoc-nav__entry>Domain</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/entity/ class=gdoc-nav__entry>Entity</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/epic/ class=gdoc-nav__entry>Epics</a></span></label></li><li><input type=checkbox class=hidden>
-<label><span class=flex><a href=/concepts/example/ class=gdoc-nav__entry>Example</a></span></label></li><li><input type=checkbox class=hidden>
-<label><span class=flex><a href=/concepts/expression/ class=gdoc-nav__entry>Expression</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/field/ class=gdoc-nav__entry>Field</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/function/ class=gdoc-nav__entry>Function</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/group/ class=gdoc-nav__entry>Group</a></span></label></li><li><input type=checkbox class=hidden>
@@ -44,18 +43,19 @@ Pipe End Connections Pipes have two ends, from and to, and each must be connecte
 <label><span class=flex><a href=/concepts/outlet/ class=gdoc-nav__entry>Outlets</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/output/ class=gdoc-nav__entry>Output</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/pipe/ class="gdoc-nav__entry is-active">Pipes</a></span></label></li><li><input type=checkbox class=hidden>
-<label><span class=flex><a href=/concepts/plant/ class=gdoc-nav__entry>Plants</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/processor/ class=gdoc-nav__entry>Processors</a></span></label></li><li><input type=checkbox class=hidden>
-<label><span class=flex><a href=/concepts/projection/ class=gdoc-nav__entry>Projections</a></span></label></li><li><input type=checkbox class=hidden>
+<label><span class=flex><a href=/concepts/projector/ class=gdoc-nav__entry>Projectors</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/repository/ class=gdoc-nav__entry>Repository</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/root/ class=gdoc-nav__entry>Root</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/sagastep/ class=gdoc-nav__entry>Saga Steps</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/saga/ class=gdoc-nav__entry>Sagas</a></span></label></li><li><input type=checkbox class=hidden>
+<label><span class=flex><a href=/concepts/statement/ class=gdoc-nav__entry>Statement</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/state/ class=gdoc-nav__entry>States</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/case/ class=gdoc-nav__entry>Story Case</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/term/ class=gdoc-nav__entry>Terms</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/type/ class=gdoc-nav__entry>Types</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/user/ class=gdoc-nav__entry>User</a></span></label></li><li><input type=checkbox class=hidden>
+<label><span class=flex><a href=/concepts/value/ class=gdoc-nav__entry>Value</a></span></label></li><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/concepts/vital/ class=gdoc-nav__entry>Vital Definitions</a></span></label></li></ul></li><li><input type=checkbox class=gdoc-nav__toggle id=navtree-cb5e063a>
 <label for=navtree-cb5e063a class="flex justify-between align-center"><span class=flex><a href=/guides/ class=gdoc-nav__entry>Guides</a></span><svg class="gdoc-icon toggle gdoc_keyboard_arrow_left"><use xlink:href="#gdoc_keyboard_arrow_left"/></svg><svg class="gdoc-icon toggle gdoc_keyboard_arrow_down"><use xlink:href="#gdoc_keyboard_arrow_down"/></svg></label><ul class=gdoc-nav__list><li><input type=checkbox class=hidden>
 <label><span class=flex><a href=/guides/domain-experts/ class=gdoc-nav__entry>Domain Expert's Guide</a></span></label></li><li><input type=checkbox class=gdoc-nav__toggle id=navtree-640f775f>
@@ -174,8 +174,8 @@ connecting it to an <a class=gdoc-markdown__link href=/concepts/inlet/>inlet</a>
 <a class=gdoc-markdown__link href=/concepts/outlet/>outlet</a> (for <code>from</code> ends).
 An open end is not specified in the pipe definition. Instead, it is
 implied by use of the<code>publish</code> and <code>subscribe</code>
-<a class=gdoc-markdown__link href=/concepts/action/>action</a>s. This permits multiple publishers and
-multiple subscribers.</p><div class=gdoc-page__anchorwrap><h2 id=pipe-options>Pipe Options
+<a class=gdoc-markdown__link href=/concepts/statement/>statements</a>s. This permits multiple
+publishers and multiple subscribers.</p><div class=gdoc-page__anchorwrap><h2 id=pipe-options>Pipe Options
 <a data-clipboard-text=https://riddl.tech/concepts/pipe/#pipe-options class="gdoc-page__anchor clip flex align-center" title="Anchor to: Pipe Options" aria-label="Anchor to: Pipe Options" href=#pipe-options><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Pipes may play a large role in the resiliency of a reactive system, so we
 permit a variety of options to be specified on them. These options are
 only intended as advice to the translators converting the pipe into something
@@ -227,7 +227,7 @@ Each subscription gets every datum the pipe carries. Consumers attach to a
 subscription and there is generally one consumer per partition of the
 subscription. Sometimes subscriptions are known as <em>consumer groups</em> as is the
 case for Kafka.</p><div class=gdoc-page__anchorwrap><h2 id=occurs-in>Occurs In
-<a data-clipboard-text=https://riddl.tech/concepts/pipe/#occurs-in class="gdoc-page__anchor clip flex align-center" title="Anchor to: Occurs In" aria-label="Anchor to: Occurs In" href=#occurs-in><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><ul><li><a class=gdoc-markdown__link href=/concepts/plant/>Plants</a></li></ul><div class=gdoc-page__anchorwrap><h2 id=contains>Contains
+<a data-clipboard-text=https://riddl.tech/concepts/pipe/#occurs-in class="gdoc-page__anchor clip flex align-center" title="Anchor to: Occurs In" aria-label="Anchor to: Occurs In" href=#occurs-in><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><ul><li><a class=gdoc-markdown__link href=/language/root/domain/streaming/plant/>Plants</a></li></ul><div class=gdoc-page__anchorwrap><h2 id=contains>Contains
 <a data-clipboard-text=https://riddl.tech/concepts/pipe/#contains class="gdoc-page__anchor clip flex align-center" title="Anchor to: Contains" aria-label="Anchor to: Contains" href=#contains><svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"/></svg></a></h2></div><p>Nothing</p></article><div class="gdoc-page__footer flex flex-wrap justify-between"></div></div></main><footer class=gdoc-footer><nav class="container flex"><div><section class="flex flex-wrap align-center"><span class="gdoc-footer__item gdoc-footer__item--row">Built with <a href=https://gohugo.io/ class=gdoc-footer__link>Hugo</a></span>
 <span class="gdoc-footer__item gdoc-footer__item--row">By &copy;2022 Ossum Inc. <a href=/legal class=gdoc-footer__link>All Rights Reserved.</a></span>
 <span class="gdoc-footer__item gdoc-footer__item--row"><a href=/privacy class=gdoc-footer__link>Privacy</a></span></section></div><div class="flex flex-25 justify-end"><span class="gdoc-footer__item text-right"><a class="gdoc-footer__link fake-link" href=# aria-label="Back to top"><svg class="gdoc-icon gdoc_keyboard_arrow_up"><use xlink:href="#gdoc_keyboard_arrow_up"/></svg><span class=hidden-mobile>Back to top</span></a></span></div></nav></footer></div><script defer src=/js/search-1c4cfb2d.bundle.min.js></script></body></html>
